@@ -1,15 +1,13 @@
-import Image from 'next/image'
-import styles from './page.module.css'
+import Link from 'next/link'
+import React from 'react'
 
-export default function Home() {
+
+function page() {
   return (
-    <div className={styles.container}>
-      <Image
-        src="/images/aula-props.png"
-        alt="Aula Props"
-        width={1280}
-        height={720}
-      />
+    <div>
+        <Link href="/finances"></Link>
     </div>
   )
 }
+
+export default page
